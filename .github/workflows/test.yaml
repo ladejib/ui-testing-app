@@ -27,12 +27,12 @@ jobs:
         env:
           CYPRESS_baseUrl: http://localhost:5000
     
-      # Optional: Store videos
-      - uses: actions/upload-artifact@v3
-        if: failure()
-        with:
-          name: cypress-videos
-          path: cypress/videos
+      # # Optional: Store videos
+      # - uses: actions/upload-artifact@v3
+      #   if: failure()
+      #   with:
+      #     name: cypress-videos
+      #     path: cypress/videos
 
       # Cleanup (optional)
       - name: Stop container
